@@ -1,0 +1,2 @@
+Perhaps the most common mistake when designing a .NET class (such as DDD Entities) is using the RequiredAttribute for purposes other than its intended function, which is typically to be used by ORM-like tools (such as EF) for mapping a property of a class to a non-nullable table column in the database. In simple terms, the RequiredAttribute can't make a property of a class required for the CLR. 
+Let me show you the correct way to ensure properties are truly required.
